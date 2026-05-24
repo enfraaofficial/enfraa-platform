@@ -34,12 +34,21 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <span className="font-headings font-extrabold text-2xl tracking-tight">
-            <span className="text-primary-400 group-hover:text-primary-200 transition-colors duration-300">En</span>
-            <span className="text-white">Fraa</span>
+        <a href="#" className="flex items-center gap-3 group">
+          {/* Circular Orbit Logo SVG */}
+          <div className="relative w-9 h-9 shrink-0 flex items-center justify-center">
+            <svg className="absolute w-9 h-9 animate-[spin_30s_linear_infinite]" viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="45" stroke="rgba(123, 92, 245, 0.15)" strokeWidth="1" />
+              <circle cx="50" cy="50" r="37" stroke="rgba(123, 92, 245, 0.25)" strokeWidth="1.2" strokeDasharray="6 4" />
+              <circle cx="50" cy="50" r="29" stroke="rgba(123, 92, 245, 0.4)" strokeWidth="1.5" />
+            </svg>
+            <div className="w-6 h-6 rounded-full bg-primary-600/30 border border-primary-500/40 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(123,92,245,0.4)]">
+              <span className="font-headings text-[11px] font-extrabold text-white tracking-tighter">En</span>
+            </div>
+          </div>
+          <span className="font-headings font-extrabold text-xl tracking-tight text-white group-hover:text-primary-400 transition-colors duration-300">
+            EnFraa
           </span>
-          <span className="w-1.5 h-1.5 rounded-full bg-primary-400 group-hover:bg-white transition-colors duration-300" />
         </a>
 
         {/* Desktop Navigation */}

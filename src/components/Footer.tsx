@@ -32,12 +32,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-12">
           {/* Brand Info */}
           <div className="lg:col-span-4 space-y-4">
-            <a href="#" className="flex items-center gap-2">
-              <span className="font-headings font-extrabold text-2xl tracking-tight">
-                <span className="text-primary-400">En</span>
-                <span className="text-white">Fraa</span>
+            <a href="#" className="flex items-center gap-3">
+              {/* Circular Orbit Logo SVG */}
+              <div className="relative w-9 h-9 shrink-0 flex items-center justify-center">
+                <svg className="absolute w-9 h-9 animate-[spin_30s_linear_infinite]" viewBox="0 0 100 100" fill="none">
+                  <circle cx="50" cy="50" r="45" stroke="rgba(123, 92, 245, 0.15)" strokeWidth="1" />
+                  <circle cx="50" cy="50" r="37" stroke="rgba(123, 92, 245, 0.25)" strokeWidth="1.2" strokeDasharray="6 4" />
+                  <circle cx="50" cy="50" r="29" stroke="rgba(123, 92, 245, 0.4)" strokeWidth="1.5" />
+                </svg>
+                <div className="w-6 h-6 rounded-full bg-primary-600/30 border border-primary-500/40 flex items-center justify-center z-10 shadow-[0_0_15px_rgba(123,92,245,0.4)]">
+                  <span className="font-headings text-[11px] font-extrabold text-white tracking-tighter">En</span>
+                </div>
+              </div>
+              <span className="font-headings font-extrabold text-xl tracking-tight text-white">
+                EnFraa
               </span>
-              <span className="w-1.5 h-1.5 rounded-full bg-primary-400" />
             </a>
             <p className="text-xs text-neutral-text font-light leading-relaxed max-w-sm">
               The next-generation smart billing and finance workflow engine built for hyper-growth startups and global operations. Simplify business, empower growth.
@@ -115,7 +124,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2 text-xs text-neutral-text">
                 <MapPin size={14} className="text-primary-400 shrink-0 mt-0.5" />
-                <span>Manjeri, Malappuram, Kerala, India</span>
+                <span>Manjeri, Malappuram, Kerala</span>
               </li>
             </ul>
           </div>
