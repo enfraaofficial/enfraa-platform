@@ -156,7 +156,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: -50, y: -20 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="absolute left-[-10px] top-[40px] z-30 w-[180px] glass-card p-4 rounded-xl border border-white/10 shadow-lg animate-float"
+            className="absolute left-[-10px] top-[40px] z-30 w-[180px] glass-card p-4 rounded-xl border border-white/10 shadow-lg animate-float hidden sm:block"
           >
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-lg bg-accent-green/10 text-accent-green">
@@ -178,7 +178,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 60, y: 100 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="absolute right-[-20px] bottom-[30px] z-30 w-[190px] glass-card p-4 rounded-xl border border-white/10 shadow-lg animate-float-delayed"
+            className="absolute right-[-20px] bottom-[30px] z-30 w-[190px] glass-card p-4 rounded-xl border border-white/10 shadow-lg animate-float-delayed hidden sm:block"
           >
             <span className="text-[10px] text-neutral-text font-bold block uppercase tracking-wider mb-2">Expenses</span>
             <div className="flex items-center justify-between gap-4">
@@ -227,7 +227,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: -60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="absolute right-[30px] top-[10px] z-10 w-[150px] glass-card p-3 rounded-xl border border-white/5 shadow-md animate-float-reverse"
+            className="absolute right-[30px] top-[10px] z-10 w-[150px] glass-card p-3 rounded-xl border border-white/5 shadow-md animate-float-reverse hidden sm:block"
           >
             <div className="flex items-center gap-2">
               <div className="p-1.5 rounded-lg bg-accent-yellow/10 text-accent-yellow">
